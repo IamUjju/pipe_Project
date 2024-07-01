@@ -1,0 +1,6 @@
+<p>initials works!</p>
+<label for="">FirstName</label>
+<input type="text" [(ngModel)]="firstName">
+<label for="">LastName</label>
+<input type="text"[(ngModel)]="lastName">
+<div>{{firstName|initials: lastName}}</div>

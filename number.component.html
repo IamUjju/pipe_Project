@@ -1,0 +1,8 @@
+<p>number works!</p>
+<div>
+    <p>Default number: {{ number | number }}</p>
+    <p>Number with custom digit info: {{ number | number: '1.2-3' }}</p>
+    <p>Number with minimum integer digits: {{ number | number: '4' }}</p>
+    <p>Number with minimum fraction digits: {{ number | number: '.2' }}</p>
+    <p>Number with maximum fraction digits: {{ number | number: '.2-4' }}</p>
+</div>

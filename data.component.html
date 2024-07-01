@@ -1,0 +1,14 @@
+<div>
+    <p>Short date: {{ date | date: 'short' }}</p>
+    <p>Medium date: {{ date | date: 'medium' }}</p>
+    <p>Long date: {{ date | date: 'long' }}</p>
+    <p>Full date: {{ date | date: 'full' }}</p>
+    <p>Short time: {{ date | date: 'shortTime' }}</p>
+    <p>Medium time: {{ date | date: 'mediumTime' }}</p>
+    <p>Long time: {{ date | date: 'longTime' }}</p>
+    <p>Full time: {{ date | date: 'fullTime' }}</p>
+    <p>Date in UTC: {{ date | date: 'medium' : 'UTC' }}</p>
+    <p>Date in local timezone: {{ date | date: 'medium' : 'local' }}</p>
+    <p>Date in specific timezone: {{ date | date: 'medium' : '+0500' }}</p>
+    <p>Date in French locale: {{ date | date: 'medium' : 'fr-FR' }}</p>
+</div>

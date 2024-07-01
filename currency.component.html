@@ -1,0 +1,9 @@
+<p>currency works!</p>
+<div>
+    <p>Default currency: {{ amount | currency }}</p>
+    <p>Currency with symbol: {{ amount | currency: 'USD': true }}</p>
+    <p>Currency without symbol: {{ amount | currency: 'USD': false }}</p>
+    <p>Currency with code: {{ amount | currency: 'USD': 'code' }}</p>
+    <p>Currency with custom digit info: {{ amount | currency: 'USD': '1.2-2' }}</p>
+    <!-- <p>Currency with different locale: {{ amount | currency: 'EUR': 'true': 'fr-FR' }}</p> -->
+</div>
